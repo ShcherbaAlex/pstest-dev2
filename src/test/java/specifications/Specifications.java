@@ -10,6 +10,7 @@ public class Specifications {
     public static RequestSpecification requestSpecification(String url) {
         return new RequestSpecBuilder()
                 .setBaseUri(url)
+                .setAccept("application/json")
                 .setContentType("application/json")
                 .build();
     }

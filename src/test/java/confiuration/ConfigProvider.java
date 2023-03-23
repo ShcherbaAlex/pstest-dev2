@@ -1,12 +1,11 @@
 package confiuration;
 
 import com.typesafe.config.Config;
-import com.typesafe.config.ConfigFactory;
 
 import static com.typesafe.config.ConfigFactory.load;
 
 public interface ConfigProvider {
-    static Config readConfig(){
+    static Config readConfig() {
         return load("configuration.conf");
     }
 
